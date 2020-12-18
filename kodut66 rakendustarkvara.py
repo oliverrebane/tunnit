@@ -10,6 +10,21 @@ print(f"{number1} ja {number2} summa on {vastus}")
 #ylesanne 05
 #not very sure on how to do this
 
+V = int(input("Sisesta voltide langus iga takisti kohta: "))
+I = int(input("Sisesta takistis olev vool amprites: "))
+R1 = V / I
+R2 = 0
+kogus= int(input("Mitu takistit on ühendatud? "))
+ae = input("Kas takistite ühendus on rööbiti või jadamisi? (R/J) ")
+if ae=="R":
+    R2 = (1/R1) * kogus)
+    print("Kogu takistus on",R2)
+elif ae =="J":
+    R2 = R1 * kogus
+    print("Kogu takistus on",R2)
+else:
+    print("Sellist valikut ei ole.")
+
 print("\n")
 #ylesanne 08
 string = input("Sisesta lause: ")
